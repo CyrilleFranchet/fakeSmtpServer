@@ -11,5 +11,6 @@ to do
 exemple :
 python smtpserver.py localhost 25
 
+folder test contain test script to send fake mail
 
 #Simple !
