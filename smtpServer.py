@@ -60,7 +60,7 @@ class MyChannel(SMTPChannel):
 
 class EmlServer(SMTPServer):
     no = 0
-    channel_class = MyChannel()
+    channel_class = MyChannel
 
     def process_message(self, peer, mailfrom, rcpttos, data):
         filename = '%s-%d.eml' % (datetime.now().strftime('%Y%m%d%H%M%S'),
